@@ -1,3 +1,5 @@
+### This tool will import shapefile, plot them, and graph SWMM model results.  
+
 import pandas as pd
 import csv
 import numpy as np
