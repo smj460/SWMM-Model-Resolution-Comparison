@@ -4,7 +4,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import descartes
 import plotly 
-plotly.tools.set_credentials_file(username='smj46', api_key='nniqvcTGdUFaIgIuXXqW')
+##For plotly to work, you will need a username and api_key
+plotly.tools.set_credentials_file(username='XXXXX', api_key='XXXXX')
 import plotly.plotly as py
 import plotly.graph_objs as go
 import geopandas as gpd
@@ -13,7 +14,7 @@ from matplotlib.ticker import MaxNLocator
 
 ###Graph resolution maps###
 
-#First plot
+#First plot - Note the location of the filepath should be changed to the proper path
 
 area=gpd.read_file(r'C:\Users\smj46\Desktop\Python Scripts\Shapefiles\77_4\Subcatchments.shp')
 fig, ax = plt.subplots(nrows=1, ncols=4, figsize=(15,15))
@@ -62,6 +63,8 @@ ax[3].axes.get_yaxis().set_visible(False)
 
 
 ###Model simulation results###
+
+#csv path needs to be changed to proper pathway
 
 #Import Data
 data=pd.read_csv(r'C:\Users\smj46\Desktop\Python Scripts\Event3_scales.csv')
